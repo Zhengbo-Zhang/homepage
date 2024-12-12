@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://geng-haoran.github.io/ -->
+<html lang="en"><!-- head --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "🥳", "👋", "💓", "🐽", "👽", "😻", "💪");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="./style/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66DNLPJ6PY');
+  </script>
+
+  
+  <title>Zhengbo Zhang   |  张正博</title>
+  
+  <meta name="author" content="Zhengbo Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
+	<link rel="icon" type="image/png" href="./style/icon.png">
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+</script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<!-- bib hide -->
+
+
+<!-- body -->
+<body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">
+  <!-- self-intro -->
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Zhengbo Zhang | 张正博</name>
+              </p>
+              <p style="text-align: justify">
+              <intro>
+                I am a second-year <b>Ph.D. student</b> supervised by <a href="https://istd.sutd.edu.sg/people/faculty/soh-de-wen">Prof. Soh De Wen</a>  at Singapore University of Technology and Design. 
+              </intro>
+              <p>
+                Expected graduation in 2026, open to postdoc and research scientist positions.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:zhengbo_zhang@mymail.sutd.edu.sg">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=4uHpwzkAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/Zhengbo-Zhang">Github</a> 
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> <!-- move the photo a bit left -->
+              <br>
+              <!-- <br> -->
+              <img style="padding:1%; width:60%; max-width:60%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="./images/photo.jpg" class="hoverZoomLink">
+            </td>
+            <!-- <td style="padding:5%;width:37%;max-width:37%"> 
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/face3.jpg" class="hoverZoomLink">
+              <a href="https://hits.seeyoufarm.com" target="_blank"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false"/></a>
+            </td> -->
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+  </tbody></table>
+
+
+
+  <!-- Research -->
+  <br><heading>Research</heading><br><p>
+      My research interests are broadly in <strong>3D/2D Computer Vision</strong> and <strong>Computer Animation</strong>. My overarching research objective is to contribute to the development of lifelike, intelligent, and interactive virtual avatars and animations.
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+    
+    <!--  ----------------------------------------------------------------------------------------------------------------------------------- -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/IJCAI.png' height="120" width="190">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://www.ijcai.org/proceedings/2022/235">
+          <span class="papertitle">Distilling Inter-Class Distance for Semantic Segmentation</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Chunluan Zhou, Zhigang Tu
+        <br>
+        <strong>IJCAI</strong> <strong> <span style="color: #c7281f;">(Long Oral)</span></strong>, 2022
+        <br>
+        <a href="https://arxiv.org/abs/2411.08656">arxiv</a>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/itkd.png' height="120" width="250">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://www.zayx.me/ITKD.github.io/">
+          <span class="papertitle">Instance Temperature Knowledge Distillation</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Yuxi Zhou, Jia Gong, Jun Liu, Zhigang Tu,
+        <br>
+        <strong>Arxiv</strong>, 2023
+        <br>
+        <a href="https://www.zayx.me/ITKD.github.io/">project page </a> / <a href="https://github.com/Zhengbo-Zhang/ITKD">code </a> / <a href="https://arxiv.org/pdf/2407.00115">arxiv </a>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/IJCAI.png' height="120" width="190">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://eccv.ecva.net/virtual/2024/poster/382">
+          <span class="papertitle">Distilling Inter-Class Distance for Semantic Segmentation</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Li Xu, Duo Peng, Hossein Rahmani, Jun Liu
+        <br>
+        <strong>ECCV</strong>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2407.08394">arxiv</a>
+        </div>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/mret.jpg' height="150" width="200">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10495176">
+          <span class="papertitle">A Modular Neural Motion Retargeting System Decoupling Skeleton and Shape Perception</span>
+        </a>
+        <br>
+        <strong>Jiaxu Zhang</strong>, Zhigang Tu*, Junwu Weng, Junsong Yuan, Bo Du
+        <br>
+        <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>T-PAMI</strong>)</em>, 2024
+        <br>
+        <a href="https://github.com/Kebii/R2ET/">code </a> / <a href="">arxiv </a>
+        <p></p>
+        <p>M-R2ET is a modular neural motion retargeting system designed to transfer motion between characters with different structures but corresponding to homeomorphic graphs, meanwhile preserving motion semantics and perceiving shape geometries.</p>
+      </td>
+    </tr>
+
+  <tr>
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <img src='images/motions.jpg' height="150" width="200">
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/pdf/2403.11469.pdf">
+      <span class="papertitle">Generative Motion Stylization of Cross-structure Characters within Canonical Motion Space</span>
+    </a>
+    <br>
+    <strong>Jiaxu Zhang</strong>, Xin Chen, Gang Yu, Zhigang Tu*
+    <br>
+    <em>Proceedings of the 32nd ACM International Conference on Multimedia (<strong>ACM MM</strong>)</em>, 2024
+    <br>
+   <a href="https://arxiv.org/abs/2403.11469">arxiv </a>
+    <p></p>
+    <p>We present MotionS, a generative motion stylization pipeline for synthesizing diverse and stylized motion on cross-structure source using cross-modality style prompts.</p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <img src='images/tapmo.jpg' height="150" width="200">
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://semanticdh.github.io/TapMo/">
+      <span class="papertitle">TapMo: Shape-aware Motion Generation of Skeleton-free Characters</span>
+    </a>
+    <br>
+    <strong>Jiaxu Zhang#</strong>, Shaoli Huang#, Zhigang Tu*, Xin Chen, Xiaohang Zhan, Gang Yu, Ying Shan
+    <br>
+    <em>The Twelfth International Conference on Learning Representations (<strong>ICLR</strong>)</em>, 2024
+    <br>
+    <a href="https://semanticdh.github.io/TapMo/">project page </a> / <a href="https://github.com/Kebii/TapMo">code </a> / <a href="https://arxiv.org/abs/2310.12678">arxiv </a>
+    <p></p>
+    <p>TapMo is a text-based animation pipeline for generating motion in a wide variety of skeleton-free characters.</p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <img src='images/r2et.jpg' height="150" width="200">
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Skinned_Motion_Retargeting_With_Residual_Perception_of_Motion_Semantics__CVPR_2023_paper.html">
+      <span class="papertitle">Skinned Motion Retargeting with Residual Perception of Motion Semantics & Geometry</span>
+    </a>
+    <br>
+    <strong>Jiaxu Zhang</strong>, Junwu Weng, Di Kang, Fang Zhao, Shaoli Huang, Xuefei Zhe, Linchao Bao, Ying Shan, Jue Wang, Zhigang Tu*
+    <br>
+    <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2023
+    <br>
+    <a href="https://semanticdh.github.io/R2ET/">project page </a> / <a href="https://github.com/Kebii/R2ET/">code</a> / <a href="https://arxiv.org/abs/2303.08658">arxiv </a>
+    <p></p>
+    <p>R2ET is a neural motion retargeting model that can preserve the source motion semantics and avoid interpenetration in the target motion.</p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <img src='images/zt.jpg' height="150" width="200">
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/9845486">
+      <span class="papertitle">Zoom Transformer for Skeleton-based Group Activity Recognition</span>
+    </a>
+    <br>
+    <strong>Jiaxu Zhang</strong>, Yifan Jia, Wei Xie, and Zhigang Tu*
+    <br>
+    <em>IEEE Transactions on Circuits and Systems for Video Technology (<strong>T-CSVT</strong>)</em>, 2022
+    <br>
+    <a href="https://github.com/Kebii/Zoom-Transformer">code</a> / <a href="">arxiv</a>
+    <p></p>
+    <p>We propose a novel Zoom Transformer to exploit both the low-level single-person motion information and the high-level multi-person interaction information in a uniform attention structure.</p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <img src='images/jbfgcn.jpg' height="150" width="200">
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/9772775">
+      <span class="papertitle">Joint-bone Fusion Graph Convolutional Network for Semi-supervised Skeleton Action Recognition</span>
+    </a>
+    <br>
+    Zhigang Tu#, <strong>Jiaxu Zhang#*</strong>, Hongyan Li, Yujin Chen, and Junsong Yuan
+    <br>
+    <em>IEEE Transactions on Multimedia (<strong>T-MM</strong>)</em>, 2022
+    <br>
+    <a href="">code</a> / <a href="https://arxiv.org/abs/2202.04075">arxiv</a>
+    <p></p>
+    <p>we propose a semi-supervised skeleton-based action recognition method.</p>
+  </td>
+</tr>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+  </tbody></table>
+
+  <!-- Services -->
+  <!-- <br><heading>Services</heading><br><table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        
+        
+        
+      <td style="padding:0px;width:100%;vertical-align:middle">
+        <p>
+          </p><li>Reviewer: SIGGRAPH, NeurIPS, AAAI</li>
+        <p></p>
+      </td>
+    </tr>
+  </tbody></table> -->
+
+
+
+
+
+
+  <!-- Aknowledgements -->
+  <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website. Last updated: Dec. 10, 2024
+        </p><table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+        
+      
+      </tr>
+  </tbody></table>
+ 
+
+
+</td></tr></tbody></table></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
