@@ -1,1 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><!-- head --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "🥳", "👋", "💓", "🐽", "👽", "😻", "💪");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="./style/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66DNLPJ6PY');
+  </script>
+
+  
+  <title>Zhengbo Zhang   |  张正博</title>
+  
+  <meta name="author" content="Zhengbo Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
+	<link rel="icon" type="image/png" href="./style/icon.png">
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+</script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<!-- bib hide -->
+
+
+<!-- body -->
+<body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">
+  <!-- self-intro -->
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Zhengbo Zhang | 张正博</name>
+              </p>
+              <p style="text-align: justify">
+              <p>
+		My research focuses on <b>generative models</b> (such as diffusion models for video generation and editing) 
+		and <b>reinforcement learning</b>. Previously, I also conducted research in the field of model
+		compression.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:zhengbo_zhang@mymail.sutd.edu.sg">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=4uHpwzkAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/Zhengbo-Zhang">GitHub</a> 
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> <!-- move the photo a bit left -->
+              <br>
+              <!-- <br> -->
+              <img style="padding:1%; width:50%; max-width:50%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="./images/photo.jpeg" class="hoverZoomLink">
+            </td>
+            <!-- <td style="padding:5%;width:37%;max-width:37%"> 
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/face3.jpg" class="hoverZoomLink">
+              <a href="https://hits.seeyoufarm.com" target="_blank"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false"/></a>
+            </td> -->
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+  </tbody></table>
+
+
+
+  <!-- Research -->
+ <h2>Selected publications</h2><p>
+      
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+    
+   
+ <!--  ----------------------------------------------------------------------------------------------------------------------------------- -->
+   <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/2025cvpr.png' height="120" width="250">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+	<a href="https://cvpr.thecvf.com/virtual/2025/poster/34729">
+          <span class="papertitle">Visual Prompting for One-shot Controllable Video Editing without Inversion</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Yuxi Zhou, Duo Peng, Joo Hwee Lim, Zhigang Tu, De Wen Soh, Lin Geng Foo
+        <br>
+        <strong>CVPR</strong>, 2025
+        <br>
+	<a href="https://cvpr.thecvf.com/virtual/2025/poster/34729">paper</a>  
+        <p></p>
+        <p>We perform one-shot controllable video editing via visual prompting to eschew the DDIM inversion process, which can potentially introdude errors.</p>
+        </div>
+      </td>
+    </tr>
+	
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/difftracker.png' height="120" width="250">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://eccv.ecva.net/virtual/2024/poster/382">
+          <span class="papertitle">Diff-Tracker: Text-to-Image Diffusion Models are Unsupervised Trackers</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Li Xu, Duo Peng, Hossein Rahmani, Jun Liu
+        <br>
+        <strong>ECCV</strong>, 2024
+        <br>
+        <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04096.pdf">paper</a>  / <a href=>code </a>
+        <p></p>
+        <p>We introduce Diff-Tracker, which leverages the rich knowledge encapsulated within the pre-trained diffusion model, such as the understanding of image semantics and structural information, to address unsupervised visual tracking.</p>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/eccv_pose.png' height="120" width="250">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://eccv.ecva.net/virtual/2024/oral/1270">
+          <span class="papertitle">Harnessing Text-to-Image Diffusion Models for Category-Agnostic Pose Estimation</span>
+        </a>
+        <br>
+        Duo Peng, <strong>Zhengbo Zhang</strong>, Ping Hu, Qiuhong Ke, David Yau, Jun Liu
+        <br>
+        <strong>ECCV</strong> <strong> <span style="color: #c7281f;">(Oral&nbsp;|&nbsp;200/8585)</span></strong>, 2024
+        <br>
+        <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02103.pdf">paper</a> 
+        <p></p>
+        <p>We propose to harness rich knowledge in the off-the-shelf text-to-image diffusion model to effectively address Category-Agnostic Pose Estimation, without
+training on carefully prepared base categories.</p>
+        </div>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/IJCAI.png' height="120" width="190">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://www.ijcai.org/proceedings/2022/235">
+          <span class="papertitle">Distilling Inter-Class Distance for Semantic Segmentation</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Chunluan Zhou, Zhigang Tu
+        <br>
+        <strong>IJCAI</strong> <strong> <span style="color: #c7281f;">(Long Oral&nbsp;|&nbsp;88/4535)</span></strong>, 2022
+        <br>
+        <a href="https://www.ijcai.org/proceedings/2022/0235.pdf">paper</a>
+ <p></p>
+        <p> We propose a novel knowledge distillation method for semantic segmentation that encourages the student model to achieve large inter-class distances in the feature space, thereby enhancing segmentation accuracy.</p>        
+        </div>
+      </td>
+    </tr>
+
+	
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src='images/itkd.png' height="120" width="250">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="line-height: 1.4;"> 
+        <a href="https://www.zayx.me/ITKD.github.io/">
+          <span class="papertitle">Instance Temperature Knowledge Distillation</span>
+        </a>
+        <br>
+        <strong>Zhengbo Zhang</strong>, Yuxi Zhou, Jia Gong, Jun Liu, Zhigang Tu,
+        <br>
+        <strong>ArXiv Preprint</strong>, 2023
+        <br>
+        <a href="https://www.zayx.me/ITKD.github.io/">project page </a>  / <a href="https://arxiv.org/pdf/2407.00115">paper </a> / <a href="https://github.com/Zhengbo-Zhang/ITKD">code </a>
+        <p></p>
+        <p>We formulate the allocation of instance-specific temperatures  in knowledge distillation as a sequential decision-making task and propose a novel reinforcement learning-based method, RLKD, to address it.</p>        
+        </div>
+      </td>
+    </tr>
+
+
+
+
+
+    
+<!--  ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+  </tbody></table>
+
+  <!-- Services -->
+  <!-- <br><heading>Services</heading><br><table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        
+        
+        
+      <td style="padding:0px;width:100%;vertical-align:middle">
+        <p>
+          </p><li>Reviewer: SIGGRAPH, NeurIPS, AAAI</li>
+        <p></p>
+      </td>
+    </tr>
+  </tbody></table> -->
+
+
+
+
+
+
+  <!-- Aknowledgements -->
+  <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website. Last updated: Mar. 11, 2025
+        </p><table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      
+        
+      
+      </tr>
+  </tbody></table>
+ 
+
+
+</td></tr></tbody></table></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
 
